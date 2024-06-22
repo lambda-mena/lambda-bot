@@ -1,4 +1,4 @@
-import { Client, Events, GatewayIntentBits } from "discord.js";
+import { Client, GatewayIntentBits } from "discord.js";
 import { registerListeners } from "./listeners";
 import { TOKEN } from "./config";
 
