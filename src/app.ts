@@ -10,12 +10,6 @@ const client = new Client({
   ],
 });
 
-/*
-client.once(Events.ClientReady, readyEvent => {
-  console.log(`Bot logged in as ${readyEvent.user.tag}`);
-});
-*/
-
 registerListeners(client);
 
 client.login(TOKEN);
