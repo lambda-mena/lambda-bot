@@ -38,7 +38,7 @@ export default function messageCreateListener(e: Message<true>) {
     const commandName = splittedContent[0].split(PREFIX)[1];
     if (availableCommands.has(commandName)) {
       const command = availableCommands.get(commandName)!;
-      const commandArgs = splittedContent.slice(1).reduce((prev, current) => prev+current);
+      const commandArgs = splittedContent.slice(1).reduce((prev, current) => prev + " " + current);
       try {
         command.onExecution(e, commandArgs);
       } catch (ex) {
